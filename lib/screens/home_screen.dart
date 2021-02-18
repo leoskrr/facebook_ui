@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_responsive_ui/config/palette.dart';
+import 'package:flutter_facebook_responsive_ui/data/data.dart';
 import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -33,7 +34,9 @@ class HomeScreen extends StatelessWidget {
                 iconSize: 30.0,
                 onPressed: () => print("Messenger")),
           ],
-        )
+        ),
+        //OBS: Como estamos em um array de Sliver, então é necesário ter o "SliverToBoxAdapter"
+        SliverToBoxAdapter(child: CreatePostContainer(currentUser: currentUser))
       ],
     ));
   }
