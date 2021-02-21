@@ -27,7 +27,7 @@ This project was built with:
 ## :camera: Screenshots
 <ul>
   <li>
-    iPhone:
+    iOS:
   </li>
 </ul>
 <p align="center">
