@@ -6,6 +6,13 @@
   <img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
 </h1>
 
+<p align="center">
+  <a href="#iphone-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench-technologies--tools">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#camera-screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#incoming_envelope-contact">Contact</a>
+</p>
+
 ## :iphone: Project
 
 This project is a Facebook clone built in order to learn the basics of the <b>Flutter framework</b>. It was built based on the [Marcos Ng](https://www.youtube.com/channel/UC6Dy0rQ6zDnQuHQ1EeErGUA) channel tutorial.
@@ -38,4 +45,7 @@ This project was built with:
 </p>
 
 ## :incoming_envelope: Contact
-You can find the main ways to contact me on my [profile](https://github.com/leoskrr/leoskrr).
+You can find the main ways to contact me on [my profile](https://github.com/leoskrr/leoskrr).
+
+<hr/>
+<p align="center">With :blue_heart:, by <a href="https://github.com/leoskrr">Leonardo Viana</a>.</p>
