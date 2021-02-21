@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_facebook_responsive_ui/config/palette.dart';
 import 'package:flutter_facebook_responsive_ui/models/models.dart';
 import 'package:flutter_facebook_responsive_ui/widgets/profile_avatar.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class PostContainer extends StatelessWidget {
   final Post post;
@@ -164,7 +165,78 @@ class _PostStats extends StatelessWidget {
             ),
           ],
         ),
+        const Divider(),
+        Row(
+          children: [
+            _PostButton(
+              icon: Icon(
+                MdiIcons.thumbUpOutline,
+                color: Colors.grey[600],
+                size: 20.0,
+              ),
+              label: 'Like',
+              onTap: () => print('Like'),
+            ),
+            _PostButton(
+              icon: Icon(
+                MdiIcons.commentOutline,
+                color: Colors.grey[600],
+                size: 20.0,
+              ),
+              label: 'Comment',
+              onTap: () => print('Comment'),
+            ),
+            _PostButton(
+              icon: Icon(
+                MdiIcons.shareOutline,
+                color: Colors.grey[600],
+                size: 25.0,
+              ),
+              label: 'Share',
+              onTap: () => print('Share'),
+            ),
+          ],
+        )
       ],
+    );
+  }
+}
+
+class _PostButton extends StatelessWidget {
+  final Icon icon;
+  final String label;
+  final Function onTap;
+
+  const _PostButton({
+    Key key,
+    @required this.icon,
+    @required this.label,
+    @required this.onTap,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Material(
+        color: Colors.white,
+        child: InkWell(
+          onTap: onTap,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            height: 25.0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                icon,
+                const SizedBox(
+                  width: 4.0,
+                ),
+                Text(label),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
